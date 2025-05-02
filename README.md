@@ -1,4 +1,4 @@
-[![Architecture Diagram](![image (3)](https://github.com/user-attachments/assets/6f37b4ed-c424-4205-9bfe-7c95759e1aaf))
+(![image (3)](https://github.com/user-attachments/assets/6f37b4ed-c424-4205-9bfe-7c95759e1aaf)
 
 
 
