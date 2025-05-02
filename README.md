@@ -1,12 +1,5 @@
-├── docs/
-│   └── architecture.png       # Diagrama de arquitetura em alto nível
-├── src/
-│   ├── bronze_ingest.py       # Notebook/API de ingestão (Bronze)
-│   ├── silver_transform.py    # Notebook de transformação (Silver)
-│   └── gold_consume.py        # Notebook de consumo/Agregação (Gold)
-├── workflows/
-│   └── pipeline_workflow.json # Definição do Databricks Workflows
-└── README.md                  # Este arquivo
+[![Architecture Diagram](docs/architecture.png)](docs/architecture.png)
+
 
 Abaixo o diagrama de alto nível da arquitetura:
 
