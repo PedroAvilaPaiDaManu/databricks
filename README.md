@@ -1,58 +1,56 @@
 Abaixo o diagrama de alto nível da arquitetura:
 ![arquitetura_thera](https://github.com/user-attachments/assets/70ca7c14-bb55-4952-87af-7139fdbdc912)
 
-
 Bronze (Raw)
 
-Ingestão de dados brutos diretamente das APIs (ex.: pares de moedas, commodities).
+Ingest raw data directly from APIs (e.g., currency pairs, commodities).
 
-Escrita em tabelas Delta no Unity Catalog (raw schema).
+Write into Delta tables in Unity Catalog (raw schema).
 
 Silver (Transformation)
 
-Limpeza, validação e tipagem dos dados.
+Cleanse, validate, and enforce data typing.
 
-Escrita em tabelas Delta no schema silver.
+Write into Delta tables in the silver schema.
 
 Gold (Consumption)
 
-Agregação e geração de views/tabelas analíticas.
+Aggregate and generate visualizations / analytical tables.
 
-Escrita em tabelas Delta no schema gold.
+Write into Delta tables in the gold schema.
 
-Orquestração
+Orchestration
 
-Jobs sequenciais e dependências gerenciadas pelo Databricks Workflows.
+Sequential jobs and dependencies managed via Databricks Workflows.
 
-Agendamentos, retries e alertas configurados.
+Scheduling, retries and alerting configured.
 
-Governança
+Governance
 
-Unity Catalog para controle de acesso e linagem de dados.
+Unity Catalog for access control and data lineage.
 
 
 git clone https://github.com/seu-usuario/seu-repo.git
 cd seu-repo
 
-2. Carregar e Configurar a Imagem de Arquitetura
+Load and Configure the Architecture Diagram
+Place the architecture.png file inside the docs/ folder.
 
-Coloque o arquivo architecture.png dentro da pasta docs/.
+Configure Databricks Workflows
 
-3. Configurar Workflows no Databricks
+Access your Databricks workspace.
 
-Acesse o workspace Databricks.
+Import the pipeline definition from workflows/pipeline_workflow.json.
 
-Importe o pipeline definido em workflows/pipeline_workflow.json.
+Adjust any environment variables (URLs, credentials) as needed.
 
-Ajuste variáveis de ambiente (URLs, credenciais).
+Run the Jobs
 
-4. Executar os Jobs
+In Databricks Workflows, trigger manually or schedule.
 
-No Databricks Workflows, acione manualmente ou agende.
+Monitor job status, logs and outputs.
 
-Monitore status, logs e resultados.
-
-📚 Referências
+References
 
 Databricks Delta Lake
 
