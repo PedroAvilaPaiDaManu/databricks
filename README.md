@@ -13,11 +13,6 @@ Cleanse, validate, and enforce data typing.
 
 Write into Delta tables in the silver schema.
 
-Gold (Consumption)
-
-Aggregate and generate visualizations / analytical tables.
-
-Write into Delta tables in the gold schema.
 
 Orchestration
 
